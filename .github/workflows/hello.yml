@@ -16,4 +16,7 @@ jobs:
       - name: Display date
         run: |
           echo "The date is $(date)"
+      - name: Display directory
+        run: |
+          "echo The current directory is $(ls)"
 ...
