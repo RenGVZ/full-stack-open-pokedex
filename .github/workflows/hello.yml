@@ -15,5 +15,5 @@ jobs:
           echo "Yo whats up world"
       - name: Display date
         run: |
-          echo "The date is ${date()}"
+          echo "The date is "`R Sys.Date()`"
 ...
