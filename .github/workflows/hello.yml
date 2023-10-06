@@ -13,11 +13,7 @@ jobs:
       - name: Say hello
         run: |
           echo "Yo whats up world"
-
-  display_date_job:
-    runs-on: ubuntu-20.04
-    steps:
-        - name:  Display date
-          run: |
-            echo "The time is ${date}"
+      - name: Display date
+        run: |
+          echo "The date is ${date}"
 ...
