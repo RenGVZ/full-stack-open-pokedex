@@ -20,7 +20,7 @@ primary_region = "nrt"
   PORT = "4000"
 
 [http_service]
-  internal_port = 8080
+  internal_port = 4000
   force_https = true
   auto_stop_machines = true
   auto_start_machines = true
@@ -29,5 +29,5 @@ primary_region = "nrt"
 
 [[services]]
   http_checks = []
-  internal_port = 8080
+  internal_port = 4000
   processes = ["app"]
