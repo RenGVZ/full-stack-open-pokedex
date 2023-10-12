@@ -1,0 +1,13 @@
+name: Render Deploy Action
+
+on:
+  push:
+    branches:
+      - render
+
+jobs:
+  build_app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: render-branch deploy
+        run: curl https://api.render.com/deploy/srv-${{ secrets.RENDER_SERVICE_ID }}?key=${{ secrets.RENDER_API_KEY }}
