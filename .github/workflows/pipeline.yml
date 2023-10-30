@@ -32,7 +32,6 @@ jobs:
           start: npm run start-prod
           wait-on: http://localhost:4000
   tag_release:
-    if: github.event.pull_request.merged == true
     needs: [simple_deployment_pipeline]
     runs-on: ubuntu-20.04
     permissions:
